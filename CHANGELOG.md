@@ -9,5 +9,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.0.1] - 2019-10-03
 ### Added
 - #1: Implements basic Docker client and sets up repository
+- #3: Implement GPL license
 
 [0.0.1]: https://github.com/erkrnt/healthcheck/releases/tag/0.0.1
