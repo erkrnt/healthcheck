@@ -1,5 +1,8 @@
-# Created by https://www.gitignore.io/api/go,osx,windows,visualstudiocode
-# Edit at https://www.gitignore.io/?templates=go,osx,windows,visualstudiocode
+# Created by https://www.gitignore.io/api/go,osx,windows,visualstudiocode,dotenv
+# Edit at https://www.gitignore.io/?templates=go,osx,windows,visualstudiocode,dotenv
+
+### dotenv ###
+.env
 
 ### Go ###
 # Binaries for programs and plugins
@@ -87,4 +90,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.gitignore.io/api/go,osx,windows,visualstudiocode
+# End of https://www.gitignore.io/api/go,osx,windows,visualstudiocode,dotenv
