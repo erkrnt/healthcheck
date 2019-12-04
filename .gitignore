@@ -1,3 +1,6 @@
+### healthcheck ###
+*.db
+
 # Created by https://www.gitignore.io/api/go,osx,windows,visualstudiocode,dotenv
 # Edit at https://www.gitignore.io/?templates=go,osx,windows,visualstudiocode,dotenv
 
