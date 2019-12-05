@@ -12,6 +12,7 @@ import (
 
 // Flags : command-line flags
 type Flags struct {
+	Debug   bool
 	Preseed bool
 }
 
@@ -29,7 +30,7 @@ func loadDB(env string, flags Flags) (*gorm.DB, error) {
 	if err != nil {
 		return nil, err
 	}
-	if env == "development" {
+	if flags.Debug == true {
 		db.LogMode(true)
 	}
 	db.AutoMigrate(&HealthcheckType{})
@@ -65,9 +66,10 @@ func loadEnv() string {
 
 // loadFlags : loads command-line flags
 func loadFlags() Flags {
+	debug := flag.Bool("debug", false, "Enables debug output.")
 	preseed := flag.Bool("preseed", false, "Enables preseeding of database for required types.")
 	flag.Parse()
-	return Flags{Preseed: *preseed}
+	return Flags{Debug: *debug, Preseed: *preseed}
 }
 
 // preseed : loads tables with preseed values (types, etc)
